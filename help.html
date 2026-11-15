@@ -27,7 +27,7 @@ p,li{font-size:14px;line-height:1.75}p{margin:8px 0}ul,ol{padding-left:22px}
 <h2>このツールについて</h2>
 <p>パズルアンドサバイバルの週間イベントを、曜日ごとに確認しやすく整理したツールです。</p>
 <p>週タイプに応じたタスクの確認、完了状況の記録、時間指定イベントの確認、獅子奮迅との時間帯の重複候補の確認などに使用できます。</p>
-<div class="notice"><strong>週タイプは日付から自動で切り替わります</strong><p>2026年11月9日（月）開始週をエースコマンダー週として、月曜日を週の開始日とし、毎週交互に判定します。2026年11月16日（月）開始週はファイター&amp;シューター通常週です。週タイプを手動で変更する操作はありません。</p></div>
+<div class="notice"><strong>週タイプはゲーム内日付から自動で切り替わります</strong><p>ゲーム内の日付・曜日は毎日9:00に切り替わります。9:00より前は前日の曜日として扱います。週の切り替わりも月曜日の9:00です。2026年11月9日（月）9:00開始週をエースコマンダー週として、毎週交互に判定します。2026年11月16日（月）9:00開始週はファイター&amp;シューター通常週です。週タイプを手動で変更する操作はありません。</p></div>
 <p>ホーム画面上部には「今週はエースコマンダー」または「今週は通常週」と表示され、週に対応した画像も表示されます。画像をタップすると拡大表示できます。</p>
 
 <h2>基本的な使い方</h2>
@@ -37,10 +37,10 @@ p,li{font-size:14px;line-height:1.75}p{margin:8px 0}ul,ol{padding-left:22px}
 <div class="step"><span class="num">4</span><div>時間指定の予定や使用アイテムを確認し、準備に利用します。</div></div>
 
 <h2>ホーム画面</h2>
-<div class="feature"><div class="feature-title">今日の予定</div><div class="feature-description">現在の日付と、その日に適用される週タイプを表示します。未完了・時間指定・獅子被り候補の件数も確認できます。</div></div>
+<div class="feature"><div class="feature-title">今日の予定</div><div class="feature-description">9:00を境に切り替わるゲーム内日付と、その日に適用される週タイプを表示します。未完了・時間指定・獅子被り候補の件数も確認できます。</div></div>
 <div class="feature"><div class="feature-title">次のイベント</div><div class="feature-description">今日の時間指定タスクのうち、次に予定されている項目を表示します。時間指定のタスクがない場合は、その旨が表示されます。</div></div>
 <div class="feature"><div class="feature-title">今日のタスク</div><div class="feature-description">今日実施するタスクの一覧です。タスクごとに完了状況を記録できます。</div></div>
-<div class="feature"><div class="feature-title">週間カレンダー</div><div class="feature-description">月曜日から日曜日までのタスク件数などを表示します。日付をタップすると、その日のタスクを確認できます。</div></div>
+<div class="feature"><div class="feature-title">週間カレンダー</div><div class="feature-description">月曜日から日曜日までのタスク件数などを表示します。曜日と週の切り替わりは毎日9:00です。日付をタップすると、その日のタスクを確認できます。</div></div>
 <div class="feature"><div class="feature-title">今日の時間軸</div><div class="feature-description">時刻が設定されているタスクを、時刻順に表示します。</div></div>
 <div class="feature"><div class="feature-title">獅子奮迅の開催日表示</div><div class="feature-description">獅子奮迅は木曜日・金曜日・土曜日のみ開催されます。ホーム画面では、選択中の日付が開催日かどうかを「本日は獅子奮迅の開催日」または「本日開催されません」と表示します。週間カレンダーでも、木・金・土には「⚔ 開催」、それ以外の曜日には「対象外」と表示します。</div></div>
 <div class="feature"><div class="feature-title">獅子奮迅の時間帯</div><div class="feature-description">開催日である木・金・土について、獅子奮迅と重なる可能性があるタスクの候補を時間帯ごとに確認できます。</div></div>
@@ -77,7 +77,6 @@ p,li{font-size:14px;line-height:1.75}p{margin:8px 0}ul,ol{padding-left:22px}
 <h2>上部のメニュー</h2>
 <p>画面上部の「☰」を押すとメニューが開きます。各画面への移動、使い方ページの表示、選択週のチェック状態のリセットができます。</p>
 <div class="feature"><div class="feature-title">選択週のチェック状態をリセット</div><div class="feature-description">現在選択している日付が属する週のチェック状態をまとめて削除します。実行前に確認メッセージが表示されます。リセットした状態は元に戻せません。</div></div>
-
 <!--
 <h2>スケジュール管理・編集</h2>
 <p>メニューの「スケジュール管理・編集」から管理画面を開き、週タイプ・曜日ごとのタスクを追加・編集・削除できます。</p>
